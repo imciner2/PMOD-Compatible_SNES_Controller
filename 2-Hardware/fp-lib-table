@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name Capacitors)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Capacitors.pretty")(options "")(descr ""))
+  (lib (name Connectors)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Connectors.pretty")(options "")(descr ""))
+  (lib (name Diodes)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Diodes.pretty")(options "")(descr ""))
+  (lib (name Graphics)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Graphics.pretty")(options "")(descr ""))
+  (lib (name Inductors)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Inductors.pretty")(options "")(descr ""))
+  (lib (name LEDs)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/LEDs.pretty")(options "")(descr ""))
+  (lib (name Modules)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Modules.pretty")(options "")(descr ""))
+  (lib (name Resistors)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Resistors.pretty")(options "")(descr ""))
+  (lib (name SMD)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/SMD.pretty")(options "")(descr ""))
+  (lib (name Switches)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Switches.pretty")(options "")(descr ""))
+  (lib (name Transistors)(type KiCad)(uri "$(KIPRJMOD)/libraries/modules/Transistors.pretty")(options "")(descr ""))
+)

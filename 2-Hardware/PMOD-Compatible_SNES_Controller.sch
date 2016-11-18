@@ -1,0 +1,129 @@
+EESchema Schematic File Version 2
+LIBS:Amplifiers
+LIBS:Connectors
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RepeaterParts
+LIBS:RF_OEM_Parts
+LIBS:Sensors
+LIBS:TransistorParts
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_1x7 P1
+U 1 1 582E97EE
+P 1950 3900
+F 0 "P1" H 2031 4587 60  0000 C CNN
+F 1 "CONN_1x7" H 2031 4481 60  0000 C CNN
+F 2 "Connectors:GAMING_SNES" H 1950 3900 60  0001 C CNN
+F 3 "" H 1950 3900 60  0000 C CNN
+	1    1950 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 1650 3500 0    60   ~ 0
++5v
+Text Notes 1350 3650 0    60   ~ 0
+Data Clock
+Text Notes 1350 3800 0    60   ~ 0
+Data Latch
+Text Notes 1350 3950 0    60   ~ 0
+Serial Data
+Text Notes 1700 4400 0    60   ~ 0
+Gnd
+$Comp
+L PMOD_SINGLE J1
+U 1 1 582E992F
+P 4250 3850
+F 0 "J1" H 4307 4387 60  0000 C CNN
+F 1 "PMOD_SINGLE" H 4307 4281 60  0000 C CNN
+F 2 "Connectors:PMOD_SINGLE_MALE" H 4400 3850 60  0001 C CNN
+F 3 "" H 4400 3850 60  0000 C CNN
+	1    4250 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3600 3800 3600
+Wire Wire Line
+	3800 3600 3800 3450
+Wire Wire Line
+	3800 3450 2150 3450
+Wire Wire Line
+	2150 3600 3700 3600
+Wire Wire Line
+	3700 3600 3700 3700
+Wire Wire Line
+	3700 3700 4000 3700
+Wire Wire Line
+	4000 3800 3550 3800
+Wire Wire Line
+	3550 3800 3550 3750
+Wire Wire Line
+	3550 3750 2150 3750
+Wire Wire Line
+	2150 3900 4000 3900
+Wire Wire Line
+	4000 4100 3650 4100
+Wire Wire Line
+	3650 4100 3650 4350
+Wire Wire Line
+	3650 4350 2150 4350
+$Comp
+L TEST_POINT TP1
+U 1 1 582E9A25
+P 2650 3150
+F 0 "TP1" H 2600 3300 60  0000 L CNN
+F 1 "TEST_POINT" H 2650 3400 60  0001 C CNN
+F 2 "Connectors:TESTPOINT_063" H 2650 3150 60  0001 C CNN
+F 3 "" H 2650 3150 60  0000 C CNN
+	1    2650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_POINT TP2
+U 1 1 582E9B5B
+P 2950 3150
+F 0 "TP2" H 2900 3300 60  0000 L CNN
+F 1 "TEST_POINT" H 2950 3400 60  0001 C CNN
+F 2 "Connectors:TESTPOINT_063" H 2950 3150 60  0001 C CNN
+F 3 "" H 2950 3150 60  0000 C CNN
+	1    2950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_POINT TP3
+U 1 1 582E9B87
+P 3250 3150
+F 0 "TP3" H 3200 3300 60  0000 L CNN
+F 1 "TEST_POINT" H 3250 3400 60  0001 C CNN
+F 2 "Connectors:TESTPOINT_063" H 3250 3150 60  0001 C CNN
+F 3 "" H 3250 3150 60  0000 C CNN
+	1    3250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3250 2650 3600
+Connection ~ 2650 3600
+Wire Wire Line
+	2950 3250 2950 3750
+Connection ~ 2950 3750
+Wire Wire Line
+	3250 3250 3250 3900
+Connection ~ 3250 3900
+$EndSCHEMATC
