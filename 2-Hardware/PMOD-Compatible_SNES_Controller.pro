@@ -1,4 +1,4 @@
-update=Thu 17 Nov 2016 11:55:33 PM CST
+update=Wed 28 Dec 2016 03:36:57 PM CST
 version=1
 last_client=kicad
 [pcbnew]
@@ -42,3 +42,4 @@ LibName10=libraries/symbols/RepeaterParts
 LibName11=libraries/symbols/RF_OEM_Parts
 LibName12=libraries/symbols/Sensors
 LibName13=libraries/symbols/TransistorParts
+LibName14=power

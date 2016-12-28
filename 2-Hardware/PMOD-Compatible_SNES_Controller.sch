@@ -12,14 +12,16 @@ LIBS:RepeaterParts
 LIBS:RF_OEM_Parts
 LIBS:Sensors
 LIBS:TransistorParts
-EELAYER 26 0
+LIBS:power
+LIBS:PMOD-Compatible_SNES_Controller-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "PMOD-Compatible SNES Connector"
+Date "2016-12-28"
+Rev "A"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -29,23 +31,23 @@ $EndDescr
 $Comp
 L CONN_1x7 P1
 U 1 1 582E97EE
-P 1950 3900
-F 0 "P1" H 2031 4587 60  0000 C CNN
-F 1 "CONN_1x7" H 2031 4481 60  0000 C CNN
-F 2 "Connectors:GAMING_SNES" H 1950 3900 60  0001 C CNN
-F 3 "" H 1950 3900 60  0000 C CNN
-	1    1950 3900
+P 1950 3950
+F 0 "P1" H 2031 4637 60  0000 C CNN
+F 1 "CONN_1x7" H 2031 4531 60  0000 C CNN
+F 2 "Connectors:GAMING_SNES" H 1950 3950 60  0001 C CNN
+F 3 "" H 1950 3950 60  0000 C CNN
+	1    1950 3950
 	1    0    0    -1  
 $EndComp
-Text Notes 1650 3500 0    60   ~ 0
+Text Notes 1650 3550 0    60   ~ 0
 +5v
-Text Notes 1350 3650 0    60   ~ 0
+Text Notes 1350 3700 0    60   ~ 0
 Data Clock
-Text Notes 1350 3800 0    60   ~ 0
+Text Notes 1350 3850 0    60   ~ 0
 Data Latch
-Text Notes 1350 3950 0    60   ~ 0
+Text Notes 1350 4000 0    60   ~ 0
 Serial Data
-Text Notes 1700 4400 0    60   ~ 0
+Text Notes 1700 4450 0    60   ~ 0
 Gnd
 $Comp
 L PMOD_SINGLE J1
@@ -61,37 +63,30 @@ $EndComp
 Wire Wire Line
 	4000 3600 3800 3600
 Wire Wire Line
-	3800 3600 3800 3450
+	3800 3600 3800 3500
 Wire Wire Line
-	3800 3450 2150 3450
+	3800 3500 2150 3500
 Wire Wire Line
-	2150 3600 3700 3600
+	2150 3650 3700 3650
 Wire Wire Line
-	3700 3600 3700 3700
+	3700 3650 3700 3900
 Wire Wire Line
-	3700 3700 4000 3700
+	2150 3800 4000 3800
 Wire Wire Line
-	4000 3800 3550 3800
+	3550 3250 3550 4450
 Wire Wire Line
-	3550 3800 3550 3750
-Wire Wire Line
-	3550 3750 2150 3750
-Wire Wire Line
-	2150 3900 4000 3900
-Wire Wire Line
-	4000 4100 3650 4100
-Wire Wire Line
-	3650 4100 3650 4350
-Wire Wire Line
-	3650 4350 2150 4350
+	2150 4400 3900 4400
 $Comp
-L TEST_POINT TP1
+L TEST_POINT TP3
 U 1 1 582E9A25
 P 2650 3150
-F 0 "TP1" H 2600 3300 60  0000 L CNN
+F 0 "TP3" H 2600 3300 60  0000 L CNN
 F 1 "TEST_POINT" H 2650 3400 60  0001 C CNN
 F 2 "Connectors:TESTPOINT_063" H 2650 3150 60  0001 C CNN
 F 3 "" H 2650 3150 60  0000 C CNN
+F 4 "Value" H 2650 3150 60  0001 C CNN "DigikeyNumber"
+F 5 "Value" H 2650 3150 60  0001 C CNN "Manufacturer"
+F 6 "Value" H 2650 3150 60  0001 C CNN "ManufacturerNumber"
 	1    2650 3150
 	1    0    0    -1  
 $EndComp
@@ -107,23 +102,61 @@ F 3 "" H 2950 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_POINT TP3
+L TEST_POINT TP1
 U 1 1 582E9B87
 P 3250 3150
-F 0 "TP3" H 3200 3300 60  0000 L CNN
+F 0 "TP1" H 3200 3300 60  0000 L CNN
 F 1 "TEST_POINT" H 3250 3400 60  0001 C CNN
 F 2 "Connectors:TESTPOINT_063" H 3250 3150 60  0001 C CNN
 F 3 "" H 3250 3150 60  0000 C CNN
+F 4 "Value" H 3250 3150 60  0001 C CNN "DigikeyNumber"
+F 5 "Value" H 3250 3150 60  0001 C CNN "Manufacturer"
+F 6 "Value" H 3250 3150 60  0001 C CNN "ManufacturerNumber"
 	1    3250 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 3250 2650 3600
-Connection ~ 2650 3600
+	2650 3250 2650 3650
+Connection ~ 2650 3650
 Wire Wire Line
-	2950 3250 2950 3750
-Connection ~ 2950 3750
+	2950 3250 2950 3800
+Connection ~ 2950 3800
 Wire Wire Line
-	3250 3250 3250 3900
-Connection ~ 3250 3900
+	3250 3250 3250 3950
+Connection ~ 3250 3950
+$Comp
+L TEST_POINT TP4
+U 1 1 58642EFF
+P 3550 3150
+F 0 "TP4" H 3550 3300 60  0000 C CNN
+F 1 "TEST_POINT" H 3550 3400 60  0001 C CNN
+F 2 "Connectors:TESTPOINT_063" H 3550 3150 60  0001 C CNN
+F 3 "" H 3550 3150 60  0000 C CNN
+	1    3550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 586430D4
+P 3550 4450
+F 0 "#PWR01" H 3550 4200 50  0001 C CNN
+F 1 "GND" H 3550 4300 50  0000 C CNN
+F 2 "" H 3550 4450 50  0000 C CNN
+F 3 "" H 3550 4450 50  0000 C CNN
+	1    3550 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 4400
+Wire Wire Line
+	4000 4100 3900 4100
+Wire Wire Line
+	3900 4100 3900 4400
+Wire Wire Line
+	2150 3950 3350 3950
+Wire Wire Line
+	3700 3900 4000 3900
+Wire Wire Line
+	4000 3700 3350 3700
+Wire Wire Line
+	3350 3700 3350 3950
 $EndSCHEMATC
